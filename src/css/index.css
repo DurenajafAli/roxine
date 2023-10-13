@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: myfont;
+    src: url(../font/Poppins-MediumItalic.ttf);
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.card2::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #55565B;
+    opacity: 0.1;
+
+}
+
+.card2:hover::after {
+    left: -100%;
+    transition-duration: 1s;
+}
+
+.sec1 {
+    background-image: linear-gradient(rgba(11, 1, 1, 0.658), rgba(0, 0, 0, 0.3)), url(../Images/big-14.jpg);
+    background-size: 100% 100%;
+}
+
+.sec3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.315), rgba(0, 0, 0, 0.642)), url(../Images/big-15.jpg);
+    background-size: cover;
+}
+
+.big1 {
+    background-image: url(../Images/big-01.jpg);
+    background-size: 100% 100%;
+    /* overflow: hidden; */
+}
+
+.purplediv {
+    position: absolute;
+    visibility: hidden;
+    top: 80%;
+}
+
+.team:hover .purplediv {
+    position: absolute;
+    visibility: visible;
+    top: -12%;
+    transition-duration: 0.5s;
+}
+
+.sec7 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.718), rgba(0, 0, 0, 0.748)), url(../Images/visual-small-11.jpg);
+    background-size: 100% 100%;
+}
+
+.forhover:hover {
+    background-color: #5645FF;
+}
